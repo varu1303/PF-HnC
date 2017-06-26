@@ -1,0 +1,250 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    width:100%;
+    background-color:#2B313D;
+    position: fixed;
+    z-index: 1;
+}
+
+.inner-header{
+    width: 95%;
+    margin:0 auto;
+    display:flex;
+}
+
+.inner-header h3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding:20px;
+    flex:1;
+}
+
+.inner-header ul{
+    list-style-type: none;
+    flex:2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inner-header ul li{
+    flex-basis:20%;
+    padding: 20px 20px;
+}
+
+.inner-header h3 a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.inner-header ul li a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.banner{
+    width:100%;
+    background-color:#18BC9C;
+}
+
+.inner-banner{
+    width:95%;
+    padding-top: 200px;
+    margin:0 auto;
+}
+
+.inner-banner h3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding:20px;
+    text-align: center;
+    font-size: 2em;
+}
+.inner-banner p{
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    border-bottom: 8px solid black;
+    text-align: center;
+}
+
+#holder{
+    display: flex;
+    padding:20px;
+}
+
+#holder img{
+    margin: auto;
+    border-radius: 60px;
+}
+
+.portfolio{
+    width:100%;
+    background-color: #F7F7F7;
+}
+
+.inner-port{
+    width:95%;
+    padding-top: 20px;
+    margin:0 auto;
+}
+
+.inner-port h3{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.inner-port .p-3{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#p1, #p2, #p3{
+   flex-basis: 32%;
+   border: solid 2px balck;
+   text-align: center;
+   margin-top: 1em;
+    margin-bottom: 1em;
+   height: 550px;
+   padding-top: 8em;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    color: #18BC9C;
+    background-size: contain;
+}
+
+#p1{
+    background: url("projectimg/lodgebread-mobile-2.jpg");
+}
+
+#p2{
+    background: url("projectimg/sproutling-photo-6.jpg");
+}
+
+#p3{
+    background-image: url("projectimg/more.png")
+        
+}
+
+.about{
+    width:100%;
+    background-color:#18BC9C;
+}
+
+.inner-ab{
+    width:90%;
+    margin:0 auto;
+    padding-bottom: 5em;
+}
+
+.inner-ab h3{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+    color:white;
+    font-size: 2em;
+    
+}
+
+.inner-ab p{
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    color:white;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.one{
+    padding-bottom: 0;
+    text-align: center;
+}
+
+footer{
+    width:100%;
+    background-color:#2B313D;
+}
+
+.inner-footer{
+    width:90%;
+    background-color:#2B313D;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.left, .right{
+    flex:1;
+}
+
+.left h3, .left p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+    color: white;
+}
+
+.right h3{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+    color: white;
+}
+
+.right ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right ul li{
+    flex-basis: 20%;
+}
+.right ul li a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.active{
+    background-color:white;
+    color: black;
+}
+@media only screen and (max-width:750px){
+    .inner-header ul{
+        display:none;
+    }
+    .inner-header h3{
+        text-align: center;
+    }
+    
+    #p1,#p2,#p3{
+        min-width:600px;
+        flex:1;
+    }
+    .inner-footer{
+        flex-direction: column;
+    }
+    
+    .right{
+        padding-bottom: 17px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    
+     #p1,#p2,#p3{
+        min-width:300px;
+        flex:1;
+    }
+    
+}
